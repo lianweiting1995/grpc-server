@@ -1,0 +1,36 @@
+{
+  "name": "lian/grpc-server",
+  "description": "A GRPC Server for Hyperf.",
+  "license": "MIT",
+  "keywords": [
+    "php",
+    "swoole",
+    "hyperf",
+    "grpc",
+    "grpc-server"
+  ],
+  "require": {
+    "php": ">=7.2",
+    "hyperf/grpc": "~2.2.0",
+    "hyperf/rpc-server": "^2.2",
+    "hyperf/di": "~2.2.0",
+    "hyperf/utils": "~2.2.0",
+    "hyperf/http-message": "~2.2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Lian\\GrpcServer\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-feature-branch": "1.0-dev"
+    },
+    "hyperf": {
+      "config": "Lian\\GrpcServer\\ConfigProvider"
+    }
+  }
+}
